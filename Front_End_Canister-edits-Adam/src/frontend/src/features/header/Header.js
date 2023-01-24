@@ -81,10 +81,10 @@ export const Header = () => {
             {status === 'loggedOut' && <Image src='poked-bots-logo.png' style={{ width: '13em', paddingTop: '15px' }}></Image>}
             <div style={{ margin: '10px', paddingBottom: '10px', fontFamily: 'impact' }}>
             <h2 style={{fontFamily: 'Unbounded', textShadow: '1px 1px 1px black'}}>
-                <span style={{fontFamily: 'Caveat', fontWeight: 'heavy', color: 'white', textShadow: '2px 2px 2px black', fontSize: '1.5em'}}><em>
-                The Official <span style={{textShadow: '2px 2px 2px black', color:'red', fontSize: '1.35em'}}><b>BURN</b></span> Canister for</em></span></h2>
-                <h2 style={{color:'white', fontFamily: 'Caveat', textShadow: '2px 2px 2px black', fontSize:'4.8em'}}><em>Generation 2.0</em>
-                : Rise of the <span style={{textShadow: '4px 4px 4px green', color: 'white'}}><b>Mutants!</b></span></h2>
+                <span style={{fontFamily: 'Caveat', fontWeight: 'heavy', color: 'orange', textShadow: '2px 2px 2px red', fontSize: '1.5em'}}><em>
+            Welcome To The Official<span style={{textShadow: '7px 7px 7px red', color:'orange', fontSize: '1.35em'}}><b> BURN</b></span> Canister For</em></span></h2>
+                <h2 style={{color:'white', fontFamily: 'Caveat', textShadow: '2px 2px 2px green', fontSize:'4.8em'}}><em>Generation 2.0</em>
+                : Rise of the <span style={{textShadow: '8px 8px px limegreen', color: 'white', fontFamily: 'Kavoon', fontSize: '.95em'}}><em>Mutants!</em></span></h2>
             </div>
         </Container>
     );

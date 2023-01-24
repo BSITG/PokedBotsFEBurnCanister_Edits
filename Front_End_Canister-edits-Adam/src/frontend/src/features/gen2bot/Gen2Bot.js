@@ -32,14 +32,14 @@ export const Gen2Bot = () => {
             <Row fluid>
                 <Col>
                     <WizardScreenField>
-                        Hooray!!!🥳 Check Out Your New Gen 2.0 Placeholder Bot!🤖
+                        Congratultions! Burn Completed! 🥳 You Are Now The Proud Owner Of A New Gen2.0 PokedBot!🤖
                     </WizardScreenField>
                 </Col>
             </Row>
             <Row fluid>
                 <Col>
-                    <h4>
-                        Real Gen 2.0 Bots will be revealed soon. Thank you for paricipating in burning your Gen 1.0 Bots.🤝
+                    <h4 style={{fontFamily:'Archivo Black'}}>
+                        Our Reveal Day Is On: <span style={{fontFamily: 'Caveat'}}>January 31, 2023.</span> We'll See You There, Fam! 🤝
                     </h4>
                 </Col>
             </Row>

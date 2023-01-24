@@ -154,12 +154,12 @@ export const Burn = () => {
         
         // attempt bulk transfer
         try {
-            addToBurnStatusChecks('success', 'Request For Burn Successfull.  Claim-Id: ' + burnRequestResult.reference);
+            addToBurnStatusChecks('success', 'Success: Burn Request Sent. Claim-Id: ' + burnRequestResult.reference);
             dispatch(setClaimIdAsync(burnRequestResult.reference));
             result = await gen1Actor.transferBulk(burnRequestResult.request);
             result.err && addToBurnStatusChecks('error', 'Encountered Error While Burn Request. Error: ' + getTextFromJson(result.err));
             if (result.ok) {
-                addToBurnStatusChecks('success', 'Bulk Transfer Of Bots Successfull.');
+                addToBurnStatusChecks('success', 'Success: Bulk Transfer Of Gen1 Bots Completed.');
             }
         }
         catch (exception) {
@@ -174,7 +174,7 @@ export const Burn = () => {
                 result.err && addToBurnStatusChecks('error', 'Encountered Error While Claiming Gen 2 Bot. Error: ' + getTextFromJson(result.err));
                 if(result.ok) {
                     // addToBurnStatusChecks('success', 'Claim Successfull! Congrats :-) Your Gen 2 Token Id is ' + result.ok);
-                    addToBurnStatusChecks('success', 'Claim Successfull! Congrats 🥳');
+                    addToBurnStatusChecks('success', 'Success: Entire Burn Completed! Congratulations! 🥳');
                     
                     // clear all credits and tokens info
                     dispatch(resetBurnParametersAsync());
@@ -230,8 +230,7 @@ export const Burn = () => {
                     <h3>It's Time To <em><b>Burn!</b></em></h3>
                     <h3>Click The Burn Button Below To Send Your Gen1 Bots For A New Gen 2.0 </h3>
                     <h3><b>IMPORTANT</b>: The Gen1 Bots You Have Selected To Burn Will Be <em>Removed</em> From Your Wallet.</h3>
-                    <h3>Press The Burn Button Here To Continue</h3>
-                    <h3><span style={{fontSize: '2em'}}><b>&#8595;&#8595;&#8595;&#8595;&#8595;&#8595;</b></span></h3>
+                    <h3>Press The Button Now To Continue</h3>
                 </Col>
             </Row>
             <Row fluid style={{ marginBottom: '20px', marginTop: '40px' }}>
@@ -240,7 +239,7 @@ export const Burn = () => {
                             if(burnStatus !== 'success') dispatch(() => submitForBurn());
                             else if(burnStatus == 'success') dispatch(setStepAsync('gen2bot'));
                         }}>
-                        {burnStatus === 'success' && <h2>Click Here To Check Out Your Gen 2.0 Bot</h2>}
+                        {burnStatus === 'success' && <h2>Click Here To See Your Gen 2.0 Bot</h2>}
                         {burnStatus === 'idle' && <h2>Burn</h2>}
                         {burnStatus === 'inProgress' && (
                             <Row className={'h-100'}>
