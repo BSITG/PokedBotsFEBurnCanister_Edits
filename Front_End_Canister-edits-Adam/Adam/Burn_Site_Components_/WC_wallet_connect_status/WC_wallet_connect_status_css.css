@@ -1,0 +1,21 @@
+.wallet-connected-status-display {
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+#wallet-connected-status-display-continue-to-credits-button-container{
+    display: flex;
+    justify-content: center;
+}
+
+#wallet-connected-status-display-container{
+    margin-top: 3px;
+}
+
+#wallet-connected-status-credits-button{
+    color: black;
+    margin-bottom: 2%;
+    background-color: gold;
+    border: 3px solid black;
+}

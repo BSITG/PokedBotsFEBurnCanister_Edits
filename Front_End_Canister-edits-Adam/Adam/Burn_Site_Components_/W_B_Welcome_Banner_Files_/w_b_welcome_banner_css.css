@@ -1,0 +1,55 @@
+/* build your own custom Bootstrap theme:
+   https://themestr.app
+*/
+body{
+    color: white;
+    font-family: 'Comic Neue', sans-serif;
+}
+
+#welcome-banner{
+    display: flex
+    flex-direction: column;
+}
+
+#welcome-banner-top-message{
+    background-color: black;
+    text-align: center;
+    border: 3px solid black;
+}
+
+#welcome-banner-middle-message {
+    background-color: #0E3D1D;
+    height: auto;
+}
+
+#welcome-banner-middle-message {
+    justify-content: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
+#welcome-banner-poked-bots-logo {
+    max-height: 15vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#welcome-banner-bottom-message{
+    background-color: black;
+    text-align: center;
+}
+
+#test{
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    color: red;
+    font-weight: heavy;
+}
+
+
+
+
+

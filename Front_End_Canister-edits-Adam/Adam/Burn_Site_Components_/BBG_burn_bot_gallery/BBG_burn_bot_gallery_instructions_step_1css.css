@@ -1,0 +1,12 @@
+/* build your own custom Bootstrap theme:
+   https://themestr.app
+*/
+body {
+    font-family: Comic Neue, sans-serif; text-align: center;
+}
+
+#burn-bot-gallery-header-instructions-step-1{
+    background-color: black;
+    color: white;
+    font-family: Comic Neue, sans-serif; text-align: center;
+}

@@ -1,0 +1,41 @@
+/* build your own custom Bootstrap theme:
+   https://themestr.app
+*/
+body{
+    font-family: 'Comic Neue', sans-serif;
+    background-color: black;
+    
+}
+.card {
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px green;
+    background-color: green;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    margin: 2px;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card-text{
+    color: gold;
+    font-weight: bold;
+}
+
+#driver-select-card-gallery{
+    justify-content: center;
+}
+#driver-select-container{
+    15px;
+    background-color: yellow;
+}
+
+#driver-select-card-gallery-welcome{
+    color: white;
+    text-align: center;
+}

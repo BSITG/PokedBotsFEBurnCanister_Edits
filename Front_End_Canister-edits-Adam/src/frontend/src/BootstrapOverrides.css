@@ -1,0 +1,63 @@
+/* galaxy fold -- tiny screen ----------- */
+@media only screen and (max-device-width: 280px) {
+  .driverCardImage {
+    max-width: 50vw;
+    max-height: 40vh;
+  }
+}
+
+
+/* iphone se ----------- */
+@media only screen and (min-device-width: 281px) and (max-device-width: 380px) {
+  .driverCardImage {
+    max-width: 50vw;
+    max-height: 40vh;
+  }
+}
+
+/* iphone 12 ----------- */
+@media only screen and (min-device-width: 381px) and (max-device-width: 413px) {
+  .driverCardImage {
+    max-width: 33vh;
+    max-height: 33vh;
+  }
+}
+
+/* XS ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-width: 576px) {
+  .driverCardImage {
+    max-width: 33vh;
+    max-height: 33vh;
+  }
+}
+
+/* SM ----------- */
+@media only screen and (min-device-width: 577px) and (max-device-width: 768px) {
+  .driverCardImage {
+    max-width: 25vw;
+    max-height: 62vh;
+  }
+}
+
+
+/* MD ----------- */
+@media only screen and (min-device-width: 769px) and (max-device-width: 992px) {
+  
+}
+
+/* LG ----------- */
+@media only screen and (min-device-width: 993px) and (max-device-width: 1200px) {
+ 
+}
+
+
+/* XL ----------- */
+@media only screen and (min-device-width: 1201px) and (max-device-width: 1400px) {
+ 
+}
+
+
+/* XXL ----------- */
+@media only screen and (min-device-width: 1401px) {
+  
+}

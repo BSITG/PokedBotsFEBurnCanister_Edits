@@ -1,0 +1,71 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "description": "Internet Computer starter application",
+  "keywords": [
+    "Internet Computer",
+    "Motoko",
+    "JavaScript",
+    "Canister"
+  ],
+  "scripts": {
+    "build": "webpack",
+    "prebuild": "npm run generate",
+    "start": "webpack serve --mode development --env development",
+    "prestart": "npm run generate",
+    "generate": "dfx canister create frontend"
+  },
+  "devDependencies": {
+    "@dfinity/agent": "0.15.1",
+    "@dfinity/candid": "0.15.1",
+    "@dfinity/principal": "0.15.1",
+    "assert": "2.0.0",
+    "buffer": "6.0.3",
+    "copy-webpack-plugin": "^11.0.0",
+    "crypto-browserify": "^3.12.0",
+    "events": "3.3.0",
+    "html-webpack-plugin": "5.5.0",
+    "ic-stoic-identity": "^2.0.0",
+    "process": "0.11.10",
+    "stream-browserify": "3.0.0",
+    "terser-webpack-plugin": "^5.3.3",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.4",
+    "util": "0.12.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "engines": {
+    "node": "^12 || ^14 || ^16 || ^18"
+  },
+  "browserslist": [
+    "last 2 chrome version",
+    "last 2 firefox version",
+    "last 2 safari version",
+    "last 2 edge version"
+  ],
+  "dependencies": {
+    "@dfinity/identity": "^0.15.1",
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@reduxjs/toolkit": "^1.9.1",
+    "axios": "^1.2.3",
+    "bip39": "^3.0.4",
+    "bootstrap": "^5.2.3",
+    "css-loader": "^6.7.3",
+    "json-bigint": "^1.0.0",
+    "jstz": "^2.1.1",
+    "moment-timezone": "^0.5.40",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "redux-logger": "^3.0.6",
+    "sjcl": "^1.0.8",
+    "style-loader": "^3.3.1",
+    "styled-components": "^5.3.6"
+  }
+}
